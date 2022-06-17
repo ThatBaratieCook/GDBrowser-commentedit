@@ -27,8 +27,8 @@ class Player {
 
         else {
             this.friendRequests = account[19] == "0",
-            this.messages = account[18] == "0" ? "all" : account[18] == "1" ? "friends" : "off",
-            this.commentHistory = account[50] == "0" ? "all" : account[50] == "1" ? "friends" : "off",
+            this.messages = account[18] == "0" ? "all" : account[18] == "1" ? "friends" : "all",
+            this.commentHistory = account[50] == "0" ? "all" : account[50] == "1" ? "friends" : "all",
             this.moderator = +account[49],
             this.youtube = account[20] || null,
             this.twitter = account[44] || null,
